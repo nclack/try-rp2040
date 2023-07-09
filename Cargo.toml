@@ -1,0 +1,20 @@
+[package]
+name = "try-rp2040"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#cortex-m = "0.7"
+cortex-m-rt = "0.7"
+waveshare-rp2040-zero = "0.6.0"
+ws2812-pio = "0.6.0"
+nb = "1.1.0"
+panic-halt = "0.2.0"
+smart-leds = "0.3.0"
+fugit = "0.3.7"
+embedded-hal = "0.2.7"
+
+[target.thumbv6m-none-eabi]
+runner = "elf2uf2-rs -d"
