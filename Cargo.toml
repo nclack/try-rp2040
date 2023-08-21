@@ -15,6 +15,7 @@ panic-halt = "0.2.0"
 smart-leds = "0.3.0"
 fugit = "0.3.7"
 embedded-hal = "0.2.7"
+pio = "0.2.1"
 
 [target.thumbv6m-none-eabi]
 runner = "elf2uf2-rs -d"
